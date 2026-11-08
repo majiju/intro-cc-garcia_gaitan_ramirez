@@ -25,3 +25,6 @@
 #### 1. Traer y conocer el dato
 > - Total de caracteres: 1679
 > - Caracteres distintos: 0 y 1
+> - Cantidad de unos: no se sabe exactamente
+> - Cantidad de ceros: no se sabe exactamente
+
