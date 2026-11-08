@@ -22,3 +22,6 @@
 >4. 73 filas x 23 columnas
 
 # 1. Momento 2 - Ejecutar
+#### 1. Traer y conocer el dato
+> - Total de caracteres: 1679
+> - Caracteres distintos: 0 y 1
