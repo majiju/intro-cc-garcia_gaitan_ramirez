@@ -44,6 +44,19 @@
 * **Marcas de número:** Sí, la última fila actúa como un marcador de posición (un bit en 1) que avisa dónde termina el número binario.
 * **Análisis de la Sección 2 (Elementos Químicos):** Usando el código del monitor, aislamos de las filas 5 a 10 los números atómicos: `[1, 6, 7, 8, 15]`. Al buscarlos en la tabla periódica, corresponden a **Hidrógeno (1), Carbono (6), Nitrógeno (7), Oxígeno (8) y Fósforo (15)**, los componentes esenciales del ADN humano.
 
+#### 6. Inventario del Mensaje de Arecibo
+
+| Filas | Qué creemos que dice | ¿Lo leímos con código o lo adivinamos? | ¿Cómo lo comprobaríamos? |
+| :--- | :--- | :--- | :--- |
+| **0 – 4** | Los números del 1 al 10 en sistema binario. | **Leído con código** | Corriendo las funciones `columna` y `leer_numero` en el bloque superior de la cuadrícula. |
+| **5 – 10** | Los números atómicos de los elementos del ADN (H, C, N, O, P). | **Leído con código** | Con el script automático del monitor que detectó la Sección 2 y arrojó la lista `[1, 6, 7, 8, 15]`. |
+| **11 – 29** | Las fórmulas químicas de las bases nitrogenadas y azúcares del ADN. | **Adivinado con los ojos** | Extrayendo secuencialmente los bloques binarios verticales y validando si corresponden a las proporciones moleculares. |
+| **30 – 49** | La representación gráfica de la doble hélice del ADN junto a la cantidad de nucleótidos. | **Adivinado con los ojos** | Usando `leer_numero` en el eje central vertical para descifrar la cifra estimada del genoma humano. |
+| **50 – 59** | La silueta física de un ser humano, el tamaño promedio de la población y el censo de la Tierra en 1974. | **Adivinado con los ojos** | Decodificando los bloques numéricos laterales para verificar la altura en longitudes de onda y la cantidad en miles de millones. |
+| **60 – 65** | La posición relativa de la Tierra como tercer planeta en nuestro Sistema Solar. | **Adivinado con los ojos** | Analizando el desplazamiento de altura del tercer bloque en la fila de planetas respecto al Sol. |
+| **66 – 72** | El dibujo del radiotelescopio de Arecibo que envió el mensaje y el diámetro de la antena. | **Adivinado con los ojos** | Midiendo las líneas binarias inferiores en la última sección para extraer la dimensión física del telescopio en base 2. |
+
+
 ---
 
 # 2. Momento 3 — Explicar
