@@ -20,8 +20,6 @@
 >2. 1679 filas x 1 columna
 >3. 23 filas x 73 columnas
 >4. 73 filas x 23 columnas
-
-# 1. Momento 2 - Ejecutar
 # 1. Momento 2 — Ejecutar
 
 #### 1. Traer y conocer el dato
