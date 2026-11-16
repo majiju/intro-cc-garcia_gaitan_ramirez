@@ -61,7 +61,25 @@
 
 # 2. Momento 3 — Explicar
 
-Para descifrar este mensaje, el emisor asumió que el receptor conocería convenciones fundamentales como la organización de datos en un plano bidimensional, un orden específico de lectura, el sistema binario y la existencia de una tabla periódica universal. Aunque un extraterrestre podría deducir la geometría del rectángulo gracias a la lógica de los números primos, las convenciones biológicas y químicas terrestres las tendría que adivinar, ya que dependen de nuestra experiencia en la Tierra. A partir de esto, concluyo que representar es llegar a un acuerdo mutuo sobre cómo transformar ideas, formas o conceptos de la realidad en un código de ceros y unos para que otra mente pueda reconstruirlos exactamente igual.
+### La lista de convenciones
+
+| Convención que supuso el emisor | ¿Se puede deducir o hay que adivinarla? | ¿Por qué? |
+| :--- | :--- | :--- |
+| **Los bits forman un rectángulo** | Se puede deducir | El total de bits (1 679) es el producto de dos números primos ($23 \times 73$), lo que reduce las opciones geométricas a solo dos rectángulos posibles. |
+| **Sistema numérico en base 2 (binario)** | Se puede deducir | Al ver una secuencia ordenada de conteo del 1 al 10 al inicio del mensaje, cualquier civilización con matemáticas puede notar el patrón de potencias de 2. |
+| **Dirección de lectura (arriba hacia abajo)** | Se puede deducir | Solo leyendo las columnas de arriba hacia abajo la primera sección forma una secuencia lógica del 1 al 10; al revés no tiene sentido. |
+| **Bit marcador al final de cada número** | Se puede deducir | Aparece de forma constante como una marca de referencia en la misma fila debajo de cada columna numérica para indicar dónde termina el dato. |
+| **Tabla periódica y números atómicos** | Se puede deducir | Los elementos químicos y su número de protones son leyes universales de la física, por lo que otra especie puede asociar los números 1, 6, 7, 8 y 15 a los mismos átomos. |
+| **Pictogramas terrestres (ADN, humano, telescopio)** | Hay que adivinarla | Un extraterrestre no conoce nuestra anatomía, cómo luce una antena parabólica ni nuestro sistema solar visto desde afuera; tendría que interpretar los dibujos por contexto. |
+
+### Confrontación
+
+En **P1, P2 y P3** predijimos que había que contar ceros y unos, buscar los divisores de 1 679 para armar una cuadrícula de $23 \times 73$ o $73 \times 23$, y adivinar el orden de lectura del mapa de bits. Al ejecutar el código, confirmamos exactamente las 4 formas posibles del rectángulo y que la disposición real es de 73 filas por 23 columnas. La diferencia estuvo en los detalles internos que no imaginamos antes de ver el dibujo: no sabíamos que los números estaban escritos en vertical ni que incluían un bit marcador en la base para separar el dato del fondo.
+
+### La frase obligatoria
+
+**Representar es** ponernos de acuerdo sobre cómo traducir ideas, números o dibujos de nuestra realidad a una secuencia de ceros y unos, de manera que otra mente pueda reconstruir el mismo significado sin perder la información en el camino.
+
 
 
 
