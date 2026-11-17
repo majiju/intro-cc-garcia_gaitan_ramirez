@@ -1,4 +1,5 @@
-# 1. Momento 1 - Predecir
+# Sesión 1
+## 1. Momento 1 - Predecir
 >[! question] Pregunta 1
 >Les llega una cadena de 1679 ceros y unos, sin nada más. ¿Qué es lo primero que intentarían para encontrarse sentido? Escriban tres ideas, en orden
 
@@ -20,7 +21,7 @@
 >2. 1679 filas x 1 columna
 >3. 23 filas x 73 columnas
 >4. 73 filas x 23 columnas
-# 1. Momento 2 — Ejecutar
+## 1. Momento 2 — Ejecutar
 
 #### 1. Traer y conocer el dato
 * **Total de caracteres:** 1 679
@@ -59,7 +60,7 @@
 
 ---
 
-# 1. Momento 3 — Explicar
+## 1. Momento 3 — Explicar
 
 ### La lista de convenciones
 
@@ -158,13 +159,13 @@ Para que la otra especie pueda armar el dibujo sin ambigüedades, diseñamos una
 6. **Interpretar los pictogramas:** Asociar el dibujo radial de seis puntas con la anatomía de los **Klyntar**, las montañas con nuestra ubicación geográfica y el grano central con nuestro recurso más preciado.
 
 # Sesión 2
-## 2. Momento 1 — Predecir _(en papel)_
+## 2. Momento 1 — Predecir 
 
-**P4.** ¿Qué fracción de su mensaje creen que la otra especie va a entender? Un número entre 0 y 1, y qué sección creen que se va a perder primero.
+> [!question] P4. ¿Qué fracción de su mensaje creen que la otra especie va a entender? Un número entre 0 y 1, y qué sección creen que se va a perder primero.
 
-**P5.** Si el canal daña 1 de cada 100 bits, ¿cuántos bits dañados esperan en su mensaje? ¿Y si lo mandan tres veces?
+Creemos que van a entender aproximadamente tres cuartas partes del mensaje. Es muy probable que deduzcan las dimensiones del rectángulo por los números primos, el conteo inicial del $1$ al $8$ y el valor de la altitud. La sección que se va a perder primero es la **sección 4**, ya que el dibujo es un pictograma muy específico de nuestra cultura y, sin contexto previo, puede parecer una simple figura geométrica abstracta.
 
-✍️
+> [!question] P5. Si el canal daña 1 de cada 100 bits, ¿cuántos bits dañados esperan en su mensaje? ¿Y si lo mandan tres veces?
 
-- P4:
-- P5:
+Como nuestro mensaje de los Klyntar tiene un total de **$437\text{ bits}$**, si el canal daña $1$ de cada $100$, esperamos que se dañen aproximadamente **$4.37\text{ bits}$**. Si lo mandamos tres veces ($437 \times 3 = 1\,311\text{ bits}$ transmitidos), esperamos alrededor de **$13.11\text{ bits}$ dañados** en total a lo largo de las tres copias; sin embargo, al comparar las tres copias entre sí y elegir el bit que se repita por mayoría en cada posición, la tasa de error final tras corregir se reduce casi a **$0\text{ bits}$**.
+
