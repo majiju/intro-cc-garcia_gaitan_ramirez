@@ -34,3 +34,11 @@ Comparar dos huellas SHA-256 de 64 caracteres es confiable porque esta función 
 > [!question] ¿Cuál de las dos maneras prefieren y por qué? (Tres líneas)
 
 Preferimos la versión recursiva (`a_base_rec`) por su claridad y elegancia matemática, ya que refleja directamente la definición de descomponer un número mediante divisiones sucesivas y entrega los dígitos en el orden correcto sin tener que invertir la lista al final. Sin embargo, para números extremadamente grandes la versión con ciclo (`a_base_ciclo`) es más segura en la práctica, porque evita agotar la memoria de la pila con demasiadas llamadas en espera.
+### Parte C · Nuestra especie
+
+> [!question] Diseño de la especie y sistema numérico
+> El monitor lanza un dado y le asigna a cada equipo una base (2, 3, 5, 6, 8 o 12). Todos los números de su mensaje irán en esa base.
+
+* **Nombre de la especie:** Klyntar
+* **Base numérica elegida:** **Base 6** (sistema senario).
+* **Justificación biológica y cultural:** Los Klyntar son organismos simbiontes amorfos originarios de una colmena cósmica. Como carecen de un esqueleto rígido con diez dedos como los humanos, organizan su estructura celular y sus tentáculos de comunicación en grupos de seis nodos simétricos. Por esta razón natural, toda su aritmética, medición del tiempo y transmisión de datos interestelares se fundamentan en el sistema senario (base 6).
