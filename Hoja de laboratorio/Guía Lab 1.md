@@ -82,7 +82,7 @@ En **P1, P2 y P3** predijimos que había que contar ceros y unos, buscar los div
 
 ### 7. La revelación (Comparación con el inventario)
 
-* **Sección 1 (Números del 1 al 10):** Lo leímos **bien con código** usando las funciones `columna` y `leer_numero`. No se nos pasó nada importante; identificamos la dirección de lectura y los bits marcadores de posición.
+* **Sección 1 (Números del 1 al 10):** Lo leímos **bien con código** usando las funciones columa y leer_numero. No se nos pasó nada importante; identificamos la dirección de lectura y los bits marcadores de posición.
 * **Sección 2 (Elementos del ADN):** Lo leímos **bien con código** al extraer los números atómicos 1, 6, 7, 8 y 15. Confirmamos exactamente que representan al hidrógeno, carbono, nitrógeno, oxígeno y fósforo.
 * **Sección 3 (Fórmulas de azúcares y bases del ADN):** Lo **adivinamos bien con los ojos** al ver los bloques agrupados debajo de los átomos, aunque se nos pasó traducir con código las cantidades exactas de cada molécula.
 * **Sección 4 (Doble hélice del ADN y número de nucleótidos):** Lo **adivinamos bien con los ojos** gracias a la forma de espiral. Se nos pasó calcular el número binario gigante (más de 4 mil millones) que está en el centro vertical de la hélice.
