@@ -189,3 +189,10 @@ No podemos mandar "Manizales" en ASCII ni en Unicode porque son **tablas de codi
 > ¿Cómo va a saber la otra especie cuántas columnas tiene su mensaje?
 
 Lo resolvimos asegurando que la longitud total del mensaje sea un **número semiprimo** (el producto exacto de dos números primos: $19 \times 23 = 437\text{ bits}$). Al factorizar $437$, el receptor descarta las tiras unidimensionales de $1 \times 437$ y se queda únicamente con dos opciones rectangulares: $19 \times 23$ o $23 \times 19$. Al probar ambas, notará de inmediato que solo con **19 columnas** aparecen filas vacías de ceros que separan las secciones y un conteo ordenado del $1$ al $10_8$ al inicio.
+
+> [!question] ¿Cuál de las dos protecciones elegirían para un mensaje que tarda 25 000 años en llegar, y por qué? Con sus números. Piensen en la diferencia entre detectar un error y corregirlo.
+
+Para un mensaje interestelar que tarda **25 000 años** en llegar (como hacia el cúmulo M13), elegiríamos sin dudar la **repetición triple (`repetir3` + `votar`)**, aunque cueste **1 311 bits** frente a los **460 bits** de la paridad (el triple del tamaño original de **437 bits**).
+* La paridad solo añade 23 bits, pero **únicamente detecta** qué renglón llegó dañado; no sabe qué columna exacta se alteró ni puede arreglar el bit. En un viaje de 25 000 años, el receptor no puede mandarnos un aviso pidiendo *"por favor reenvíen el renglón 4, que llegó corrupto"*, porque esperar una respuesta y retransmitir tomaría **50 000 años** adicionales. 
+* Aunque la repetición exige gastar más energía y tiempo de antena para enviar **1 311 bits**, le entrega al receptor la capacidad de **corregir el daño por sí mismo** en destino mediante votación mayoritaria (`votar`). Como comprobamos en los 1 000 experimentos con ruido del 1 %, este método permite reconstruir el mensaje **100 % exacto** en casi **9 de cada 10 envíos** (~880 de 1 000) sin necesidad de pedir retransmisiones.
+
