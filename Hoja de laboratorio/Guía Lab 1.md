@@ -168,3 +168,24 @@ Creemos que van a entender aproximadamente tres cuartas partes del mensaje. Es m
 
 Como nuestro mensaje de los Klyntar tiene un total de **$437\text{ bits}$**, si el canal daña $1$ de cada $100$, esperamos que se dañen aproximadamente **$4.37\text{ bits}$**. Si lo mandamos tres veces ($437 \times 3 = 1\,311\text{ bits}$ transmitidos), esperamos alrededor de **$13.11\text{ bits}$ dañados** en total a lo largo de las tres copias; sin embargo, al comparar las tres copias entre sí y elegir el bit que se repita por mayoría en cada posición, la tasa de error final tras corregir se reduce casi a **$0\text{ bits}$**.
 
+### 3. Las preguntas incómodas de la representación
+
+> [!question] 1. Ancho fijo (Desbordamiento)
+> Si cada número va en un renglón de `COLUMNAS` bits, ¿cuál es el número más grande que cabe en su base? ¿Qué pasa si quieren decir cuántos habitantes tiene Manizales?
+
+En nuestro mensaje de **19 columnas** en **base 8** (`ANCHO = 3` bits por dígito), caben como máximo **$6\text{ dígitos octales}$** completos por renglón ($19 // 3 = 6$, sobrando $1\text{ bit}$). El número más grande que podemos escribir en un solo renglón es $777777_8$, que equivale a **$262\,143$** en decimal ($8^6 - 1$). Si intentamos escribir los habitantes de Manizales (aproximadamente **$458\,000$** personas, que en base 8 requiere 7 dígitos: $1576360_8$), ocurre un **desbordamiento**: el número no cabe en una sola línea. Para resolverlo, tendríamos que dividir el número en dos renglones seguidos (como hizo Arecibo con el 8, el 9 y el 10 usando dos columnas) o expresar la cifra en miles de habitantes ($458_{10} = 712_8$, que sí cabe perfecto en 3 dígitos).
+
+> [!question] 2. Decimales y unidades de medida
+> ¿Cómo dicen la altura de Manizales en metros si el otro no sabe qué es un metro, ni dónde va la coma?
+
+No podemos usar metros ni comas decimales porque el metro es una medida arbitraria inventada en la Tierra. Para resolverlo, usamos una regla física universal inspirada en las sondas *Pioneer* y en Arecibo: **la longitud de onda de transición hiperfina del átomo de hidrógeno neutro**, que mide exactamente **$21.1\text{ cm}$** ($0.211\text{ m}$) en cualquier rincón del universo. En lugar de mandar "$2\,150\text{ m}$", dividimos esa altura entre la regla del hidrógeno ($2150 / 0.211 \approx 10\,190$) y enviamos el número entero **$10\,190$** (que en base 8 es **$23716_8$**, ocupando 5 dígitos). De ese modo evitamos los decimales y usamos una unidad comprensible para cualquier civilización con radiotelescopios.
+
+> [!question] 3. Texto (ASCII / Unicode)
+> ¿Por qué no pueden mandar la palabra "Manizales" en ASCII o en Unicode? ¿Qué sí pueden mandar?
+
+No podemos mandar "Manizales" en ASCII ni en Unicode porque son **tablas de codificación convencionales humanas**: un extraterrestre que reciba el código binario `01001101` (`77`) solo verá un número entero, nunca sabrá que en nuestra cultura ese número representa la letra "M" ni mucho menos cómo suena o qué significa el español. En su lugar, sí podemos mandar **matemáticas puras, constantes físicas, estructuras químicas y pictogramas visuales**.
+
+> [!question] 4. Forma (Dimensiones de la cuadrícula)
+> ¿Cómo va a saber la otra especie cuántas columnas tiene su mensaje?
+
+Lo resolvimos asegurando que la longitud total del mensaje sea un **número semiprimo** (el producto exacto de dos números primos: $19 \times 23 = 437\text{ bits}$). Al factorizar $437$, el receptor descarta las tiras unidimensionales de $1 \times 437$ y se queda únicamente con dos opciones rectangulares: $19 \times 23$ o $23 \times 19$. Al probar ambas, notará de inmediato que solo con **19 columnas** aparecen filas vacías de ceros que separan las secciones y un conteo ordenado del $1$ al $10_8$ al inicio.
