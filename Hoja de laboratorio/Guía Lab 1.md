@@ -80,6 +80,15 @@ En **P1, P2 y P3** predijimos que había que contar ceros y unos, buscar los div
 
 **Representar es** ponernos de acuerdo sobre cómo traducir ideas, números o dibujos de nuestra realidad a una secuencia de ceros y unos, de manera que otra mente pueda reconstruir el mismo significado sin perder la información en el camino.
 
+### 7. La revelación (Comparación con el inventario)
+
+* **Sección 1 (Números del 1 al 10):** Lo leímos **bien con código** usando las funciones `columna` y `leer_numero`. No se nos pasó nada importante; identificamos la dirección de lectura y los bits marcadores de posición.
+* **Sección 2 (Elementos del ADN):** Lo leímos **bien con código** al extraer los números atómicos 1, 6, 7, 8 y 15. Confirmamos exactamente que representan al hidrógeno, carbono, nitrógeno, oxígeno y fósforo.
+* **Sección 3 (Fórmulas de azúcares y bases del ADN):** Lo **adivinamos bien con los ojos** al ver los bloques agrupados debajo de los átomos, aunque se nos pasó traducir con código las cantidades exactas de cada molécula.
+* **Sección 4 (Doble hélice del ADN y número de nucleótidos):** Lo **adivinamos bien con los ojos** gracias a la forma de espiral. Se nos pasó calcular el número binario gigante (más de 4 mil millones) que está en el centro vertical de la hélice.
+* **Sección 5 (Silueta humana, altura y población):** Adivinamos **bien con los ojos** la figura humana. Se nos pasó descifrar los números laterales que indican la estatura promedio (1,76 m medidos en longitudes de onda) y la población mundial de 1974.
+* **Sección 6 (Sistema Solar):** Lo **adivinamos bien con los ojos** al notar el Sol a la izquierda y la Tierra desplazada hacia arriba como el tercer planeta.
+* **Sección 7 (Radiotelescopio de Arecibo):** Lo **adivinamos bien con los ojos** por la forma de la antena parabólica abajo. Se nos pasó leer el número binario de la última fila que indica su diámetro físico (305 metros).
 
 
 
