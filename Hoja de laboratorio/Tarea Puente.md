@@ -4,7 +4,8 @@ Comparar dos huellas SHA-256 de 64 caracteres es confiable porque esta función 
 
 ### Parte B · Tabla de seguimiento y pila de `a_base_rec(1974, 6)`
 
-#### Tabla de seguimiento
+> [!question] Tabla de seguimiento y pila
+> Haz una fila por llamada, con `n`, `n // 6`, `n % 6` y lo que devuelve. Dibuja la pila: ¿qué queda esperando en cada llamada?
 
 | Llamada | `n` | `n // 6` | `n % 6` | Devuelve |
 | :---: | :---: | :---: | :---: | :--- |
@@ -14,7 +15,7 @@ Comparar dos huellas SHA-256 de 64 caracteres es confiable porque esta función 
 | **4** | 9 | 1 | 3 | `a_base_rec(1, 6) + [3]` ➔ **`[1, 3]`** |
 | **5** | 1 | — *(caso base: \(1 < 6\))* | — | **`[1]`** |
 
-#### Esquema de la pila de llamadas (¿Qué queda esperando?)
+#### Esquema de la pila de llamadas
 
 ```text
   [ Llamada 5 ] n = 1    ──▶ Caso base (1 < 6): devuelve [1] hacia abajo
@@ -30,6 +31,6 @@ Comparar dos huellas SHA-256 de 64 caracteres es confiable porque esta función 
 
 > **Nota sobre la pila:** Mientras la recursión baja, cada llamada deja pendiente su residuo (`+ [residuo]`) en la memoria esperando a que la llamada superior se resuelva. Al llegar al caso base (`n = 1`), los resultados suben y se van pegando en orden hasta formar `[1, 3, 0, 5, 0]`.
 
-#### [!qesti¿Cuál de las dos maneras prefieren y por qué?
+> [!question] ¿Cuál de las dos maneras prefieren y por qué? (Tres líneas)
 
 Preferimos la versión recursiva (`a_base_rec`) por su claridad y elegancia matemática, ya que refleja directamente la definición de descomponer un número mediante divisiones sucesivas y entrega los dígitos en el orden correcto sin tener que invertir la lista al final. Sin embargo, para números extremadamente grandes la versión con ciclo (`a_base_ciclo`) es más segura en la práctica, porque evita agotar la memoria de la pila con demasiadas llamadas en espera.
